@@ -1,9 +1,9 @@
-import { LoadImg } from "@atoms/LoadImg";
 import * as React from "react";
 import style from "./index.module.css";
 import placedFooter from "@imgs/placedFooter.svg";
 import appStore from "@imgs/appStore.svg";
 import playStore from "@imgs/playStore.svg";
+import { LoadImg } from "@atoms/LoadImg";
 import { footerOptions } from "./index.options";
 import { Link } from "react-router-dom";
 

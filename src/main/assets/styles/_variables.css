@@ -2,13 +2,19 @@
     --app-default-color: #fee100;
     --header-h: 7rem;
     --color-white: #ffffff;
-    --color-black: #000;
+    --color-black: #000000;
     --color-black-14: #00000014;
+    --color-black-82: #000000d1;
+    --color-black-40: #00000066;
+    --color-black-50: #00000080;
     --color-turbo: #fee100;
     --color-ebony-black: #212934;
     --color-mine-shaft: #292929;
     --color-mine-shaft-gray: #333333;
     --color-boulder: #777777;
+    --color-silver: #c4c4c4;
+    --color-candlelight: #fbde26;
+
     --app-text-sm: 0.875rem;
 }
 
