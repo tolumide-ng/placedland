@@ -7,6 +7,7 @@ import { LoadingPage } from "../../components/Pages/LoadingPage";
 // import { NotFoundPage } from "../../components/Pages/NotFoundPage";
 import { setDropDownAction } from "../../store/modules/dropDown/actions";
 import { RootState } from "../../store/modules/types";
+import { Header } from "../../components/UI/organisms/Header";
 import "./index.css";
 
 const AppRouter = withRouter(() => {
@@ -26,6 +27,7 @@ const AppRouter = withRouter(() => {
         <div className="appwide" onClick={handleCloseDropDown}>
             <main className="appwide-container">
                 <ErrorBoundary>
+                    <Header />
                     <Suspense fallback={<LoadingPage />}>
                         <Switch>
                             <Route path="/" exact>
