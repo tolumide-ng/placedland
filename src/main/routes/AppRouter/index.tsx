@@ -9,6 +9,7 @@ import { setDropDownAction } from "../../store/modules/dropDown/actions";
 import { RootState } from "../../store/modules/types";
 import { Header } from "../../components/UI/organisms/Header";
 import "./index.css";
+import { Footer } from "@organisms/Footer";
 
 const AppRouter = withRouter(() => {
     const dispatch = useDispatch();
@@ -38,6 +39,7 @@ const AppRouter = withRouter(() => {
                             </Route> */}
                         </Switch>
                     </Suspense>
+                    <Footer />
                 </ErrorBoundary>
             </main>
         </div>

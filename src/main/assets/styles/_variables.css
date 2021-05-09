@@ -7,6 +7,7 @@
     --color-turbo: #fee100;
     --color-ebony-black: #212934;
     --color-mine-shaft: #292929;
+    --color-mine-shaft-gray: #333333;
 }
 
 @media screen and (max-width: 1024px) {
