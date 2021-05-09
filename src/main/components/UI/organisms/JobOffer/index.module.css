@@ -1,0 +1,10 @@
+.job {
+    --job-w: 19.75rem;
+    --job-h: 14.8125rem;
+    --job-mod-h: 0.25rem;
+
+    height: var(--job-h);
+    width: var(--job-w);
+}
+
+
