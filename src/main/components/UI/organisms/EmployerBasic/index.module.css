@@ -1,0 +1,49 @@
+.emp {
+    --emp-h: 27.5rem;
+    --emp-w: 71.6875rem;
+    --emp-cp-pt: 3.625rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    color: var(--color-white);
+}
+
+.empFig {
+    position: relative;
+}
+
+.empBg {
+    width: var(--emp-w);
+    height: var(--emp-h);
+}
+
+.empCaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: var(--emp-cp-pt);
+}
+
+.empCaptionLogo {
+    height: 6rem;
+    width: 6rem;
+    margin-bottom: 1.5rem;
+}
+
+.empName {
+    margin-bottom: 1rem;
+}
+
+.empDesc {
+    margin-bottom: 2.9375rem;
+}
