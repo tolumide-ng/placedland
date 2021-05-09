@@ -1,0 +1,45 @@
+.footer {
+    --footer-pl: 9.75rem;
+    --footer-pr: 7.5rem;
+    background-color: var(--color-mine-shaft-gray);
+    height: 17.9375rem;
+    padding-left: var(--footer-pl);
+    padding-right: var(--footer-pr);
+    display: flex;
+    padding-top: 1.6875rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    padding-right: 3.0625rem;
+}
+
+.footerRight {
+    width: 100%;
+    color: var(--color-white);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%;
+}
+
+.footerTitle {
+    color: var(--color-boulder);
+    margin-bottom: 0.9375rem;
+    text-transform: uppercase;
+    line-height: 1.8rem;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.footerLink {
+    margin-bottom: 0.8125rem;
+    font-size: var(--app-text-sm);
+    line-height: 1.5625rem;
+}
+
+.footerLinksDiv {
+    display: flex;
+    flex-direction: column;
+}

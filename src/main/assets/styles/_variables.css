@@ -1,13 +1,15 @@
 :root {
-    --app-default-color: green;
-    --app-button-br: 5px;
-    --cont-h: 774px;
-    --header-h: 9.75rem;
-    --color-dusty-gray: #979797;
-    --color-deep-sea-green: #0a5566;
-    --color-white: #fff;
+    --app-default-color: #fee100;
+    --header-h: 7rem;
+    --color-white: #ffffff;
     --color-black: #000;
-    --color-scorpion: #5f5f5f;
+    --color-black-14: #00000014;
+    --color-turbo: #fee100;
+    --color-ebony-black: #212934;
+    --color-mine-shaft: #292929;
+    --color-mine-shaft-gray: #333333;
+    --color-boulder: #777777;
+    --app-text-sm: 0.875rem;
 }
 
 @media screen and (max-width: 1024px) {
