@@ -8,6 +8,8 @@
     --color-ebony-black: #212934;
     --color-mine-shaft: #292929;
     --color-mine-shaft-gray: #333333;
+    --color-boulder: #777777;
+    --app-text-sm: 0.875rem;
 }
 
 @media screen and (max-width: 1024px) {
