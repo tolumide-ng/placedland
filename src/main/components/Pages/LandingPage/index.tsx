@@ -1,3 +1,4 @@
+import { BenefitFeat } from "@organisms/BenefitFeat";
 import { EmployerBasic } from "@organisms/EmployerBasic";
 import { ExclusiveOffers } from "@organisms/ExclusiveOffers";
 import { PlacedFeatures } from "@organisms/PlacedFeatures";

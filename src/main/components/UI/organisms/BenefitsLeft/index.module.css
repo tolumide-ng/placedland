@@ -1,0 +1,20 @@
+.benleft {
+}
+
+.benleftTitle {
+    margin-bottom: 1.6875rem;
+    color: var(--color-baltic-sea3);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.82875rem;
+}
+
+.benleftUl {
+    color: var(--color-black-60);
+    font-size: 0.875rem;
+    margin-left: 1rem;
+}
+
+.benleftLi {
+    margin-bottom: 1rem;
+}
