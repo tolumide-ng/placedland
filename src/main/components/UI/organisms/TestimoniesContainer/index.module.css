@@ -1,0 +1,38 @@
+.testi {
+    padding-left: var(--app-pl);
+    padding-right: var(--app-pr);
+    background-color: var(--color-candlelight2);
+    height: 36.5rem;
+}
+
+.testiCont {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.testiTitle {
+    margin-bottom: 2.5rem;
+    padding-top: 2.5rem;
+    text-align: center;
+}
+
+.testiBottom {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.testiButton {
+    margin-top: 3rem;
+    text-align: center;
+    border: 1px solid var(--color-black);
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 7.6875rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.testiButton:active {
+    transform: scale(0.98);
+}

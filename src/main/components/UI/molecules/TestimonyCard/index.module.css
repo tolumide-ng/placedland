@@ -1,0 +1,58 @@
+.test {
+    width: 23.25rem;
+    height: 19.875rem;
+    background-color: var(--color-white);
+    border-radius: 0.5rem;
+    margin-right: 1.125rem;
+    padding-top: 1.375rem;
+    padding-left: 1.70125rem;
+    padding-right: 1.70125rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.test:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.testImg {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    background-color: var(--color-gray);
+    border: none;
+}
+
+.testText {
+    color: var(--color-black-70);
+    line-height: 1.375rem;
+    font-size: 0.75rem;
+}
+
+.testPerson {
+    display: flex;
+}
+
+.testInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.4375rem;
+    justify-content: space-between;
+}
+
+.testName {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: var(--color-black);
+    line-height: 1.375rem;
+    font-size: 1rem;
+}
+
+.testRole {
+    color: var(--color-black-70);
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-size: 0.75rem;
+}
