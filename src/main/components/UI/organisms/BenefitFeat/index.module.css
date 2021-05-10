@@ -2,8 +2,9 @@
     padding-left: var(--app-pl);
     padding-right: var(--app-pr);
     display: grid;
-    grid-template-columns: 28rem 8.625rem 1fr;
+    grid-template-columns: 28rem 1fr;
     margin-bottom: 11.375rem;
+    column-gap: 8.625rem;
 }
 
 .benLeft {

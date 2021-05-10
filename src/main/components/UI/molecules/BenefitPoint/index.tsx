@@ -2,14 +2,14 @@ import { LoadImg } from "@atoms/LoadImg";
 import * as React from "react";
 import style from "./index.module.css";
 
-interface BenefitProfitDef {
+interface BenefitPointDef {
     benefitImg: string;
     benefitTitle: string;
     benefitDescription: string;
     benefitAlt: string;
 }
 
-export const BenefitProfit = (props: BenefitProfitDef) => {
+export const BenefitPoint = (props: BenefitPointDef) => {
     return (
         <div className={style.ben}>
             <div className={style.benLeft}>
@@ -22,7 +22,7 @@ export const BenefitProfit = (props: BenefitProfitDef) => {
 
             <div className={style.benRight}>
                 <h4 className={style.benTitle}>{props.benefitTitle}</h4>
-                <p style={style.benDesc}>{props.benefitDescription}</p>
+                <p className={style.benDesc}>{props.benefitDescription}</p>
             </div>
         </div>
     );

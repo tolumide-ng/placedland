@@ -1,0 +1,31 @@
+.ben {
+    border: 1px solid red;
+    width: 23.75rem;
+    height: 5.3125rem;
+    margin-bottom: 0.875rem;
+    display: flex;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 1.6875rem;
+    border-radius: 1rem;
+}
+
+.benLeft {
+    margin-right: 1.6875rem;
+}
+
+.benTitle {
+    margin-bottom: 0.3125rem;
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+}
+
+.benDesc {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: var(--color-baltic-sea3);
+    font-family: "Montserrat", sans-serif;
+}
