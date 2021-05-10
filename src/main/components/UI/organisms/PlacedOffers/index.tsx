@@ -6,7 +6,9 @@ import style from "./index.module.css";
 export const PlacedOffers = () => {
     return (
         <section className={style.placo}>
-            <EmployerBasic />
+            <div className={style.placoEmployers}>
+                <EmployerBasic />
+            </div>
             <ExclusiveOffers />
         </section>
     );
