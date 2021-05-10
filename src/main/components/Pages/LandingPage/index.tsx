@@ -11,7 +11,6 @@ export const LandingPage = () => {
             <article className="ldpg-cont">
                 <EmployerBasic />
                 <PlacedFeatures />
-                <BenefitFeat />
             </article>
         </article>
     );

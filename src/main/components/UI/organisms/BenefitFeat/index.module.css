@@ -1,6 +1,6 @@
 .benefit {
-    padding-left: var(--app-pl);
-    padding-right: var(--app-pr);
+    margin-left: var(--app-pl);
+    margin-right: var(--app-pr);
     display: grid;
     grid-template-columns: 28rem 1fr;
     margin-bottom: 11.375rem;

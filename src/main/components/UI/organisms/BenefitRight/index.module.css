@@ -1,3 +1,26 @@
+.benright {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.benrightIcon {
+}
+
+.benrightIconCont {
+    z-index: 1;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    height: 100%;
+}
+
+.benrightFeats {
+    z-index: 10;
+    width: 22.5rem;
+}
+
 .benrightBackground:nth-child(1) {
     background-color: var(--color-lightning-yellow);
     height: 5.3125rem;

@@ -1,10 +1,11 @@
 import * as React from "react";
 import { BenefitPoint } from "@molecules/BenefitPoint";
 import style from "./index.module.css";
-
-import cycle from "@imgs/cycle.svg";
 import referrals from "@imgs/referral.svg";
 import money from "@imgs/money.svg";
+import cycle from "@imgs/cycle.svg";
+import placedIcon from "@imgs/placedIcon.svg";
+import { LoadImg } from "@atoms/LoadImg";
 
 const allBenefits = [
     {
@@ -29,17 +30,26 @@ const allBenefits = [
 
 export const BenefitsRight = () => {
     return (
-        <div className="">
-            {allBenefits.map((benefit) => (
-                <BenefitPoint
-                    benefitImg={benefit.image}
-                    key={benefit.title}
-                    benefitTitle={benefit.title}
-                    benefitDescription={benefit.description}
-                    benefitAlt={benefit.alt}
-                    benefitBackground={style.benrightBackground}
+        <div className={style.benright}>
+            <div className={style.benrightFeats}>
+                {allBenefits.map((benefit) => (
+                    <BenefitPoint
+                        benefitImg={benefit.image}
+                        key={benefit.title}
+                        benefitTitle={benefit.title}
+                        benefitDescription={benefit.description}
+                        benefitAlt={benefit.alt}
+                        benefitBackground={style.benrightBackground}
+                    />
+                ))}
+            </div>
+            <div className={style.benrightIconCont}>
+                <LoadImg
+                    loadAlt="background image showing placed's icon"
+                    loadImg={placedIcon}
+                    loadClass={style.benrightIcon}
                 />
-            ))}
+            </div>
         </div>
     );
 };
