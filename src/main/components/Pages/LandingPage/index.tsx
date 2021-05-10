@@ -1,3 +1,4 @@
+import { CareerPath } from "@organisms/CareerPath";
 import { EmployerBasic } from "@organisms/EmployerBasic";
 import { ExclusiveOffers } from "@organisms/ExclusiveOffers";
 import * as React from "react";
@@ -10,6 +11,7 @@ export const LandingPage = () => {
                 <EmployerBasic />
 
                 {/* <ExclusiveOffers /> */}
+                <CareerPath />
             </article>
         </article>
     );
