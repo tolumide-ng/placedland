@@ -7,7 +7,7 @@ import { Button } from "@atoms/Button";
 export const JobOffer = () => {
     return (
         <section className={style.job}>
-            <div className={style.jobContTop}></div>
+            {/* <div className={style.jobContTop}></div> */}
             <div className={style.jobCont}>
                 <div className={style.jobTop}>
                     <div className={style.jobTopLeft}>
@@ -15,11 +15,14 @@ export const JobOffer = () => {
                             loadHeight="72px"
                             loadAlt="logo of the employer"
                             loadImg={employerOne}
+                            loadClass={style.jobImage}
                         />
                     </div>
                     <div className={style.jobTopRight}>
                         <div className={style.jobTopRightTop}>
-                            <h4 className="">Gourment Burger Kitchen</h4>
+                            <h4 className={style.jobEmp}>
+                                Gourmet Burger Kitchen
+                            </h4>
                             <p className="">Commis Waiter</p>
                         </div>
                         <div className={style.jobTopRightBottom}>

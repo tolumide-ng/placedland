@@ -1,10 +1,53 @@
 .job {
     --job-w: 19.75rem;
     --job-h: 14.8125rem;
-    --job-mod-h: 0.25rem;
+    --job-top-h: 0.25rem;
+    --job-br: 0.5rem;
 
-    height: var(--job-h);
+    border-radius: var(--job-br);
+    position: relative;
+    margin-left: 14rem;
     width: var(--job-w);
+    height: var(--job-h);
+    background-color: var(--color-tuna);
+    padding: 1rem 0.75rem 1.25rem 0.75rem;
+    border-top-left-radius: calc(var(--job-br));
+    border-top-right-radius: calc(var(--job-br));
+    font-family: "Montserrat", sans-serif;
+    color: var(--color-white);
 }
 
+.job::after {
+    content: "";
+    position: absolute;
+    height: var(--job-top-h);
+    background-color: var(--color-candlelight);
+    top: 0;
+    /* width: calc(var(--job-w)- 1.9px); */
+    border-top-left-radius: var(--job-br);
+    border-top-right-radius: var(--job-br);
+    width: calc(100% - 2px);
+    left: 0.95px;
+    right: -1px;
+    /* right: 5px; */
+}
 
+.jobTop {
+    display: flex;
+}
+
+.jobImage {
+    border-radius: 100%;
+    height: 4.5rem;
+    width: 4.5rem;
+}
+
+.jobTopLeft {
+    padding-right: 0.75rem;
+}
+
+.jobEmp {
+    line-height: 1.21875rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
