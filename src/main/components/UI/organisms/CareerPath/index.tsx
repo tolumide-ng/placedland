@@ -1,5 +1,30 @@
 import * as React from "react";
 import style from "./index.module.css";
+import burger from "@imgs/burger.svg";
+import eatBurger from "@imgs/eatBurger.svg";
+import holdBurger from "@imgs/holdBurger.svg";
+import burgerWithChips from "@imgs/burgerWithChips.svg";
+import walkBurger from "@imgs/walkBurger.svg";
+import seeBurger from "@imgs/seeBurger.svg";
+import gallery from "@imgs/gallery.svg";
+import { LoadImg } from "@atoms/LoadImg";
+import { Button } from "@atoms/Button";
+
+const careerImages = [
+    {
+        img: burgerWithChips,
+        alt: "image showing burger with chips and sauce on a table",
+    },
+    { img: holdBurger, alt: "image showing a chef holding a very long burger" },
+    { img: eatBurger, alt: "image showing a person eating burger" },
+    { img: burger, alt: "image showing a burger" },
+    { img: seeBurger, alt: "image showing burger and chips" },
+    {
+        img: walkBurger,
+        alt:
+            "image focusing on a burger and a lady eyeing it on the background",
+    },
+];
 
 export const CareerPath = () => {
     return (
@@ -22,7 +47,35 @@ export const CareerPath = () => {
                 </p>
             </div>
 
-            <div className={style.careerRight}></div>
+            <div className={style.careerRight}>
+                {careerImages.map((img) => (
+                    <img
+                        src={img.img}
+                        alt={img.alt}
+                        key={img.img}
+                        className={style.careerImg}
+                    />
+                ))}
+
+                <Button
+                    buttonClass={style.careerButton}
+                    buttonText=""
+                    buttonJsx={
+                        <>
+                            <figure className={style.careerGallery}>
+                                <img
+                                    src={gallery}
+                                    alt="click on this image to view more Images"
+                                    className={style.careerImg}
+                                />
+                                <figcaption className={style.careerCaption}>
+                                    Gallery
+                                </figcaption>
+                            </figure>
+                        </>
+                    }
+                />
+            </div>
         </section>
     );
 };
