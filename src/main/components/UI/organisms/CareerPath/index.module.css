@@ -7,7 +7,7 @@
     margin-bottom: 3.0625rem;
     display: grid;
     grid-template-columns: 25.0625rem 1fr;
-    grid-column-gap: 3.1875rem;
+    column-gap: 3.1875rem;
 }
 
 .careerLeft {
