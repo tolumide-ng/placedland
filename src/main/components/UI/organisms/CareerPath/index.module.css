@@ -1,6 +1,6 @@
 .career {
-    padding-left: 8.875rem;
-    padding-right: 8.9375rem;
+    padding-left: var(--app-pl);
+    padding-right: var(--app-pr);
     padding-top: 2.5rem;
     display: flex;
     font-family: "Montserrat", sans-serif;

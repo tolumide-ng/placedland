@@ -21,6 +21,8 @@
     --color-gray: #939393;
 
     --app-text-sm: 0.875rem;
+    --app-pl: 8.875rem;
+    --app-pr: 8.9375rem;
 }
 
 @media screen and (max-width: 1024px) {

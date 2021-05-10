@@ -5,16 +5,18 @@ import olajideImg from "@imgs/olajide.svg";
 
 export const OpinionImg = () => {
     return (
-        <figure>
+        <figure className={style.opCont}>
             <LoadImg
                 loadAlt="image showing Olajide Alabi, our diversion and Inclusion specialist"
                 loadImg={olajideImg}
                 loadClass={style.opImg}
+                loadHeight="448px"
+                loadWidth="448px"
             />
-            <figcaption>
-                <p>Olajide Alabi</p>
-                <hr />
-                <p>Diversity & Inclusion Specialist</p>
+            <figcaption className={style.opCaption}>
+                <p className={style.opName}>Olajide Alabi</p>
+                {/* <hr /> */}
+                <p className={style.opRole}>Diversity & Inclusion Specialist</p>
             </figcaption>
         </figure>
     );
