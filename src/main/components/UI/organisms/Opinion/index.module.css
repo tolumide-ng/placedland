@@ -1,4 +1,6 @@
 .opinion {
     padding-left: var(--app-pl);
     padding-right: var(--app-pr);
+    display: flex;
+    margin-bottom: 4rem;
 }

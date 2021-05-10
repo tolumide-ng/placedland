@@ -1,12 +1,12 @@
 .opCont {
     position: relative;
-    height: 28rem;
-    width: 28rem;
+    height: var(--app-opimg-h);
+    width: var(--app-opimg-h);
 }
 
 .opImg {
-    height: 28rem;
-    width: 28rem;
+    height: var(--app-opimg-h);
+    width: var(--app-opimg-h);
 }
 
 .opCaption {

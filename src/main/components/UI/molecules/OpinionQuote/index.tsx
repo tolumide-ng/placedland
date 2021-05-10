@@ -9,7 +9,7 @@ export const OpinionQuote = () => {
             <LoadImg
                 loadImg={quotation}
                 loadAlt="image showing a quotation mark"
-                loadClass={style.opinonImg}
+                loadClass={style.opinionImg}
             />
             <div className={style.opinonQuote}>
                 As a Black, African, Gay man, I want Inclusion to be a right and
