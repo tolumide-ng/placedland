@@ -13,30 +13,26 @@ interface BrandsCardDef {
 export const BrandsCard = (props: BrandsCardDef) => {
     return (
         <div className={style.brand}>
-            <div className={style.brandCard}>
-                <figure className={style.brandFig}>
+            <figure className={style.brandFig}>
+                <LoadImg
+                    loadAlt={`image showing ${props.brandName}`}
+                    loadImg={props.brandImg}
+                    loadClass={style.brandImg}
+                />
+                <figcaption className={style.brandCaption}>
                     <LoadImg
-                        loadAlt={`image showing ${props.brandName}`}
-                        loadImg={props.brandImg}
-                        loadClass={style.brandImg}
+                        loadAlt={`image showing the logo of ${props.brandName}`}
+                        loadImg={props.brandLogo}
+                        loadClass={style.brandLogo}
                     />
-                    <figcaption className={style.brandCaption}>
-                        <div className={style.brandCaptionCont}>
-                            <LoadImg
-                                loadAlt={`image showing the logo of ${props.brandName}`}
-                                loadImg={props.brandLogo}
-                                loadClass={style.brandLogo}
-                            />
-                            <Button
-                                buttonClass={style.brandButton}
-                                buttonText="Follow"
-                            />
-                        </div>
-                    </figcaption>
-                </figure>
-                <div className={style.brandName}>{props.brandName}</div>
-                <p className={style.brandMotto}>{props.brandMoto}</p>
-            </div>
+                    <Button
+                        buttonClass={style.brandButton}
+                        buttonText="Follow"
+                    />
+                </figcaption>
+            </figure>
+            <div className={style.brandName}>{props.brandName}</div>
+            <p className={style.brandMotto}>{props.brandMoto}</p>
         </div>
     );
 };

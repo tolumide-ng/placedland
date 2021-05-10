@@ -1,0 +1,8 @@
+.placedInBottom::after {
+    width: 100%;
+    position: absolute;
+    height: 1rem;
+    background: var(--color-black);
+    content: "";
+    transform: translateY(-1rem);
+}
