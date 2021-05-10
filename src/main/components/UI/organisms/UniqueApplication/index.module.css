@@ -1,0 +1,13 @@
+.unique {
+    display: grid;
+    grid-template-columns: 1fr 28.1875rem 1fr;
+}
+
+.uniqueMid {
+    margin-top: 3rem;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}

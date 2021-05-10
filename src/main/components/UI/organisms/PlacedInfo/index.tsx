@@ -1,5 +1,6 @@
 import { RelatedBrands } from "@organisms/RelatedBrands";
 import { TestimoniesContainer } from "@organisms/TestimoniesContainer";
+
 import * as React from "react";
 import style from "./index.module.css";
 
