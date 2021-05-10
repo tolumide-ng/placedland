@@ -8,6 +8,7 @@
     --color-black-40: #00000066;
     --color-black-50: #00000080;
     --color-black-60: #00000099;
+    --color-black-70: #000000b3;
     --color-turbo: #fee100;
     --color-ebony-black: #212934;
     --color-mine-shaft: #292929;
@@ -17,10 +18,15 @@
     --color-candlelight: #fbde26;
     --color-baltic-sea: #1b1a1d;
     --color-tuna: #302f35;
-    --color-baltic-sea2: #1a191d;
+    --color-baltic-sea2: #595761;
     --color-gray: #939393;
+    --color-gallery: #eeeeee;
+    --color-alto: #d0d0d0;
 
     --app-text-sm: 0.875rem;
+    --app-pl: 8.875rem;
+    --app-pr: 8.9375rem;
+    --app-opimg-h: 28rem;
 }
 
 @media screen and (max-width: 1024px) {

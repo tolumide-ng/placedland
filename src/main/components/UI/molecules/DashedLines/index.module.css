@@ -1,0 +1,4 @@
+.dottedDash {
+    border: 1px dashed var(--color-alto);
+    margin-bottom: 0.125rem;
+}
