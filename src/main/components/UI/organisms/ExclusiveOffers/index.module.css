@@ -3,4 +3,24 @@
     background-color: var(--color-baltic-sea);
     height: var(--excl-h);
     width: 100%;
+    padding-top: 11rem;
+    color: var(--color-white);
+}
+
+.exclTitle {
+    text-align: center;
+    margin-bottom: 2.3125rem;
+}
+
+.exclTitle::after {
+    position: absolute;
+    background-color: var(--color-candlelight);
+    height: 1px;
+    width: 4.0625rem;
+    content: "";
+    transform: translateX(-50%) translateY(2.3125rem);
+}
+
+.exclJobs {
+    margin-top: 5.3125rem;
 }

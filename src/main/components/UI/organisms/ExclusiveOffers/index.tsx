@@ -5,11 +5,13 @@ import style from "./index.module.css";
 export const ExclusiveOffers = () => {
     return (
         <section className={style.excl}>
-            <div className="">
+            <div className={style.exclTitle}>
                 <h2>Exclusive Job Offers</h2>
             </div>
 
-            <JobOffer />
+            <div className={style.exclJobs}>
+                <JobOffer />
+            </div>
         </section>
     );
 };
