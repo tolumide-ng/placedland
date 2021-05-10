@@ -1,0 +1,14 @@
+.benrightBackground:nth-child(1) {
+    background-color: var(--color-lightning-yellow);
+    height: 5.3125rem;
+}
+
+.benrightBackground:nth-child(2) {
+    background-color: var(--color-aqua-island);
+    height: 6.25rem;
+}
+
+.benrightBackground:nth-child(3) {
+    background-color: var(--color-melanie);
+    height: 5.6875rem;
+}

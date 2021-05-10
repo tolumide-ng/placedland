@@ -37,6 +37,7 @@ export const BenefitsRight = () => {
                     benefitTitle={benefit.title}
                     benefitDescription={benefit.description}
                     benefitAlt={benefit.alt}
+                    benefitBackground={style.benrightBackground}
                 />
             ))}
         </div>

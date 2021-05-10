@@ -7,11 +7,12 @@ interface BenefitPointDef {
     benefitTitle: string;
     benefitDescription: string;
     benefitAlt: string;
+    benefitBackground: string;
 }
 
 export const BenefitPoint = (props: BenefitPointDef) => {
     return (
-        <div className={style.ben}>
+        <div className={`${style.ben} ${props.benefitBackground}`}>
             <div className={style.benLeft}>
                 <LoadImg
                     loadAlt={props.benefitAlt}
