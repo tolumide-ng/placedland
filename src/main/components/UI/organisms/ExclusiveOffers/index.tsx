@@ -10,7 +10,9 @@ export const ExclusiveOffers = () => {
             </div>
 
             <div className={style.exclJobs}>
-                <JobOffer />
+                {new Array(3).fill("_").map((option) => (
+                    <JobOffer />
+                ))}
             </div>
         </section>
     );

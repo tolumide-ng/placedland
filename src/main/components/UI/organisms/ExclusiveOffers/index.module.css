@@ -23,4 +23,7 @@
 
 .exclJobs {
     margin-top: 5.3125rem;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
 }

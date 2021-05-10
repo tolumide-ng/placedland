@@ -2,12 +2,20 @@ import { LoadImg } from "@atoms/LoadImg";
 import * as React from "react";
 import style from "./index.module.css";
 import employerOne from "@imgs/cm1.svg";
+import location from "@imgs/location.svg";
 import { Button } from "@atoms/Button";
+
+const options = [
+    "7.70-9/ph",
+    "3-12 months",
+    "Full time",
+    "Immediate start",
+    "...",
+];
 
 export const JobOffer = () => {
     return (
         <section className={style.job}>
-            {/* <div className={style.jobContTop}></div> */}
             <div className={style.jobCont}>
                 <div className={style.jobTop}>
                     <div className={style.jobTopLeft}>
@@ -23,17 +31,42 @@ export const JobOffer = () => {
                             <h4 className={style.jobEmp}>
                                 Gourmet Burger Kitchen
                             </h4>
-                            <p className="">Commis Waiter</p>
+                            <p className={style.jobRole}>Commis Waiter</p>
                         </div>
                         <div className={style.jobTopRightBottom}>
-                            <p>Fine dinning/Michelin Star</p>
+                            <p className={style.jobDesc}>
+                                Fine dinning/Michelin Star...
+                            </p>
+                            <div className={style.jobLocation}>
+                                <img
+                                    src={location}
+                                    alt="image showing the location of the employer"
+                                    className={style.jobLocationImg}
+                                />
+
+                                <p className={style.jobLocationText}>
+                                    Covent Garden
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className={style.jobMid}></div>
+                <div className={style.jobMid}>
+                    {options.map((option) => (
+                        <div key={option} className={style.jobFeat}>
+                            {option}
+                        </div>
+                    ))}
+                </div>
                 <div className={style.jobBottom}>
-                    <Button buttonClass="" buttonText="Apply" />
-                    <Button buttonClass="" buttonText="shortList" />
+                    <Button
+                        buttonClass={`${style.jobButton} ${style.jobApply}`}
+                        buttonText="Apply"
+                    />
+                    <Button
+                        buttonClass={`${style.jobButton} ${style.jobShortList}`}
+                        buttonText="shortList"
+                    />
                 </div>
             </div>
         </section>

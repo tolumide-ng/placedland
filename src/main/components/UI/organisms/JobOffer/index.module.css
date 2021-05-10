@@ -6,7 +6,7 @@
 
     border-radius: var(--job-br);
     position: relative;
-    margin-left: 14rem;
+    /* margin-left: 14rem; */
     width: var(--job-w);
     height: var(--job-h);
     background-color: var(--color-tuna);
@@ -15,6 +15,11 @@
     border-top-right-radius: calc(var(--job-br));
     font-family: "Montserrat", sans-serif;
     color: var(--color-white);
+    margin-right: 1.1875rem;
+}
+
+.job:nth-last-child(1) {
+    margin-right: 0;
 }
 
 .job::after {
@@ -46,8 +51,89 @@
     padding-right: 0.75rem;
 }
 
+.jobTopRightTop {
+    border-bottom: 1px solid var(--color-mid-gray);
+    margin-bottom: 0.3125rem;
+}
+
 .jobEmp {
     line-height: 1.21875rem;
     font-weight: 700;
     font-size: 1rem;
+}
+
+.jobRole {
+    margin-bottom: 0.3125rem;
+    margin-top: 0.1875rem;
+    font-size: 0.75rem;
+    color: var(--color-candlelight);
+}
+
+.jobDesc {
+    font-size: 0.75rem;
+}
+
+.jobLocation {
+    display: flex;
+    margin-top: 0.1875rem;
+}
+
+.jobLocationImg {
+    margin-right: 1.083125rem;
+}
+
+.jobLocationText {
+    color: var(--color-mid-gray);
+    font-size: 0.75rem;
+}
+
+.jobMid {
+    margin-top: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jobFeat {
+    display: flex;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-baltic-sea5);
+    margin-left: 0.5rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+}
+
+.jobBottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.jobButton {
+    height: 2.375rem;
+    width: 8.625rem;
+    border-radius: 0.25rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.jobButton:active {
+    transform: scale(0.98);
+}
+
+.jobApply {
+    background-color: var(--color-candlelight);
+    color: var(--color-black);
+}
+
+.jobShortList {
+    background-color: var(--color-mid-gray);
+    color: var(--color-white);
 }
