@@ -1,0 +1,15 @@
+.benefit {
+    padding-left: var(--app-pl);
+    padding-right: var(--app-pr);
+    display: grid;
+    grid-template-columns: 28rem 8.625rem 1fr;
+    margin-bottom: 11.375rem;
+}
+
+.benLeft {
+    grid-column: 1;
+}
+
+.benRight {
+    grid-column: 2;
+}
