@@ -1,3 +1,4 @@
+import { DashedLines } from "@molecules/DashedLines";
 import { BrandsCard } from "@organisms/BrandsCard";
 import * as React from "react";
 import style from "./index.module.css";
@@ -17,6 +18,7 @@ export const RelatedBrands = () => {
                     />
                 ))}
             </div>
+            <DashedLines />
         </section>
     );
 };
