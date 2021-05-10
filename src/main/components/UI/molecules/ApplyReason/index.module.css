@@ -1,0 +1,60 @@
+.apply {
+    color: var(--color-white);
+}
+
+.applyTitle {
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.67625rem;
+    margin-bottom: 1.6875rem;
+    text-align: center;
+    position: relative;
+}
+
+.applyTitle::after {
+    content: "";
+    position: absolute;
+    bottom: -1.6875rem;
+    height: 1px;
+    width: 4.0625rem;
+    background-color: var(--color-candlelight);
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transform: translateX(290%);
+}
+
+.applyText {
+    margin-top: 3.1875rem;
+    font-weight: 400;
+    line-height: 1.919375rem;
+    text-align: center;
+    text-indent: 0.5rem;
+    margin-bottom: 4.3125rem;
+}
+
+.applyAction {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.applyButton {
+    box-shadow: 2px 2px 6px var(--color-black-40);
+    background-color: var(--color-candlelight);
+    border-radius: 0.5rem;
+    height: 2.0625rem;
+    width: 10.1875rem;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    border: none;
+    line-height: 1.0625rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.applyButton:active {
+    transform: scale(0.98);
+}

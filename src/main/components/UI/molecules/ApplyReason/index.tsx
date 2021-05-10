@@ -13,10 +13,12 @@ export const ApplyReason = () => {
                 pick on personality not just experience
             </p>
 
-            <Button
-                buttonClass={style.applyButton}
-                buttonText="Start Applying"
-            />
+            <div className={style.applyAction}>
+                <Button
+                    buttonClass={style.applyButton}
+                    buttonText="Start Applying"
+                />
+            </div>
         </div>
     );
 };

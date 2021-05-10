@@ -1,5 +1,6 @@
 import { DashedLines } from "@molecules/DashedLines";
 import { BrandsCard } from "@organisms/BrandsCard";
+import { UniqueApplication } from "@organisms/UniqueApplication";
 import * as React from "react";
 import style from "./index.module.css";
 import { relatedBrandsOptions } from "./index.options";
@@ -19,6 +20,8 @@ export const RelatedBrands = () => {
                 ))}
             </div>
             <DashedLines />
+
+            <UniqueApplication />
         </section>
     );
 };
