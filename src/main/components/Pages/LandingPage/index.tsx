@@ -1,6 +1,7 @@
 import { EmployerBasic } from "@organisms/EmployerBasic";
 import { ExclusiveOffers } from "@organisms/ExclusiveOffers";
 import { PlacedFeatures } from "@organisms/PlacedFeatures";
+import { PlacedInfo } from "@organisms/PlacedInfo";
 import { RelatedBrands } from "@organisms/RelatedBrands";
 import { TestimoniesContainer } from "@organisms/TestimoniesContainer";
 import * as React from "react";
@@ -12,8 +13,7 @@ export const LandingPage = () => {
             <article className="ldpg-cont">
                 <EmployerBasic />
                 <PlacedFeatures />
-                <TestimoniesContainer />
-                <RelatedBrands />
+                <PlacedInfo />
             </article>
         </article>
     );

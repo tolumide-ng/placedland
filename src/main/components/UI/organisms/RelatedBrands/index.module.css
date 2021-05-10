@@ -11,6 +11,8 @@
     padding-right: var(--app-pr);
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
+    position: relative;
+    transform: translateY(-1rem);
 }
 
 .rbrandsTitle {
