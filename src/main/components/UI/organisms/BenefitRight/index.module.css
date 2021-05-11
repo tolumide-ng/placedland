@@ -18,7 +18,11 @@
 
 .benrightFeats {
     z-index: 5;
-    width: 22.5rem;
+    width: 100%;
+}
+
+.benrightBackground {
+    width: var(--ben-w);
 }
 
 .benrightBackground:nth-child(1) {

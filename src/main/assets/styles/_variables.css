@@ -51,6 +51,7 @@
     --job-h: 14.8125rem;
     --job-top-h: 0.25rem;
     --job-br: 0.5rem;
+    --ben-w: 22.5rem;
 }
 
 @media screen and (max-width: 1262px) {
@@ -67,11 +68,13 @@
         --app-pl: 1rem;
         --app-pr: 1rem;
         --job-mr: 0rem;
+        --ben-w: 100%;
     }
 }
 
 @media screen and (max-width: 745px) {
     :root {
+        --app-opimg-h: calc(min(28rem, calc(100vw - calc(var(--app-pl) * 2))));
     }
 }
 
