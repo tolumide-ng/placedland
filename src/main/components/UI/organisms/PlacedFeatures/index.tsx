@@ -7,12 +7,14 @@ import { MainQuoteDef } from "src/main/commonTypes";
 
 interface PlacedFeaturesDef {
     mainQuote: MainQuoteDef;
+    carousel: Array<string>;
+    name: string;
 }
 
 export const PlacedFeatures = (props: PlacedFeaturesDef) => {
     return (
         <section>
-            <CareerPath />
+            <CareerPath carousel={props.carousel} name={props.name} />
             <Opinion mainQuote={props.mainQuote} />
             <BenefitFeat />
         </section>

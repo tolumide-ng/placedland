@@ -7,7 +7,6 @@ import burgerWithChips from "@imgs/burgerWithChips.svg";
 import walkBurger from "@imgs/walkBurger.svg";
 import seeBurger from "@imgs/seeBurger.svg";
 import gallery from "@imgs/gallery.svg";
-import { LoadImg } from "@atoms/LoadImg";
 import { Button } from "@atoms/Button";
 
 const careerImages = [
@@ -26,7 +25,12 @@ const careerImages = [
     },
 ];
 
-export const CareerPath = () => {
+interface CareerPathDef {
+    carousel: Array<string>;
+    name: string;
+}
+
+export const CareerPath = (props: CareerPathDef) => {
     return (
         <section className={style.career}>
             <div className={style.careerLeft}>
@@ -48,11 +52,11 @@ export const CareerPath = () => {
             </div>
 
             <div className={style.careerRight}>
-                {careerImages.map((img) => (
+                {props.carousel.map((img) => (
                     <img
-                        src={img.img}
-                        alt={img.alt}
-                        key={img.img}
+                        src={img}
+                        alt={`pictures from ${props.name}`}
+                        key={img}
                         className={style.careerImg}
                     />
                 ))}
