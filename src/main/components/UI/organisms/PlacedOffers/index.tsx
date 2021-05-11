@@ -14,7 +14,9 @@ export const PlacedOffers = (props: PlacedOffersDef) => {
             <div className={style.placoEmployers}>
                 <EmployerBasic logo={props.logo} headerImg={props.headerImg} />
             </div>
-            <ExclusiveOffers />
+            <div className={style.placoOffers}>
+                <ExclusiveOffers />
+            </div>
         </section>
     );
 };

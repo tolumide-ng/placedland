@@ -1,0 +1,9 @@
+.ldpgCont {
+    position: relative;
+}
+
+.ldpTwo {
+    transform: translateY(var(--ldpgtwo-translate));
+    z-index: 10;
+    position: relative;
+}

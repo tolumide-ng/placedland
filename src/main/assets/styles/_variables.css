@@ -37,14 +37,48 @@
     --app-pr: 8.9375rem;
     --app-opimg-h: 28rem;
     --screen-max-width: calc(min(1500px, 100vw));
+    --emp-h: 27.5rem;
+    --emp-w: 71.6875rem;
+    --emp-cp-pt: 3.625rem;
+    --rbrands-h: 65.5625rem;
+    --testi-h: 36.5rem;
+    --excl-h: 40rem;
+    --placo-translate: 2.5rem;
+    --placo-h: calc(var(--excl-h) + var(--emp-h) - var(--placo-translate));
+    --ldpgtwo-translate: -1.5rem;
+    --job-mr: 1.1875rem;
+    --job-w: 19.75rem;
+    --job-h: 14.8125rem;
+    --job-top-h: 0.25rem;
+    --job-br: 0.5rem;
+    --ben-w: 22.5rem;
+}
+
+@media screen and (max-width: 1262px) {
+    :root {
+        --excl-h: 100%;
+        --app-pl: 2rem;
+        --app-pr: 2rem;
+        --placo-h: 100%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     :root {
+        --app-pl: 1rem;
+        --app-pr: 1rem;
+        --job-mr: 0rem;
+        --ben-w: 100%;
     }
 }
 
 @media screen and (max-width: 745px) {
+    :root {
+        --app-opimg-h: calc(min(28rem, calc(100vw - calc(var(--app-pl) * 2))));
+    }
+}
+
+@media screen and (max-width: 405px) {
     :root {
     }
 }

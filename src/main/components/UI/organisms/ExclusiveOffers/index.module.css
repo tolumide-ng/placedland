@@ -1,10 +1,15 @@
 .excl {
-    --excl-h: 40rem;
     background-color: var(--color-baltic-sea);
     height: var(--excl-h);
     width: 100%;
-    padding-top: 11rem;
+    padding-top: 6rem;
     color: var(--color-white);
+}
+
+.exclTitleH {
+    font-size: 1.375rem;
+    line-height: 1.125rem;
+    font-weight: bold;
 }
 
 .exclTitle {
@@ -25,5 +30,41 @@
     margin-top: 5.3125rem;
     display: flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+}
+
+.exclLi {
+    margin-bottom: 2.3125rem;
+    list-style: none;
+    margin-right: var(--job-mr);
+}
+
+.exclButton {
+    color: var(--color-candlelight);
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 1.25rem;
+    text-align: center;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+}
+
+.exclAction {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1262px) {
+    .exclButton {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .exclJobs {
+        justify-content: space-around;
+    }
 }

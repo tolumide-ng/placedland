@@ -1,7 +1,4 @@
 .emp {
-    --emp-h: 27.5rem;
-    --emp-w: 71.6875rem;
-    --emp-cp-pt: 3.625rem;
     width: 100%;
     height: 100%;
     display: flex;

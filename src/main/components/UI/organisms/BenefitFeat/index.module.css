@@ -14,3 +14,14 @@
 .benRight {
     grid-column: 2;
 }
+
+@media screen and (max-width: 1262px) {
+    .benefit {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .benRight {
+        margin-top: 1rem;
+    }
+}

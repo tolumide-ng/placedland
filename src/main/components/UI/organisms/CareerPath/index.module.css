@@ -1,7 +1,8 @@
 .career {
+    --car-img-ml: 0.9375rem;
     padding-left: var(--app-pl);
     padding-right: var(--app-pr);
-    padding-top: 2.5rem;
+    /* padding-top: 2.5rem; */
     display: flex;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 3.0625rem;
@@ -11,10 +12,9 @@
 }
 
 .careerLeft {
-    /* width: 25.0625rem;
-    padding-right: 4.1875rem; */
     width: 100%;
     grid-column: 1;
+    padding-top: 3.5rem;
 }
 
 .careerTitle {
@@ -40,17 +40,13 @@
 }
 
 .careerImg {
-    margin-right: 0.9375rem;
+    margin-left: var(--car-img-ml);
     height: 10rem;
     width: 10rem;
     object-fit: cover;
     border-radius: 1rem;
     cursor: pointer;
-}
-
-.careerImg:nth-child(1),
-.careerImg:nth-last-child(4) {
-    margin-right: 0;
+    margin-bottom: 0.94375rem;
 }
 
 .careerGallery {
@@ -63,8 +59,12 @@
 
 .careerButton {
     background-color: transparent;
-    margin-right: 0.9375rem;
     border: none;
+    cursor: pointer;
+}
+
+.careerLi {
+    list-style: none;
 }
 
 .careerCaption {
@@ -76,4 +76,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 1262px) {
+    .career {
+        display: flex;
+        flex-direction: column;
+        --car-img-ml: 0;
+    }
+
+    .careerRight {
+        flex-direction: row;
+        margin-top: 1rem;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .careerRight {
+        justify-content: space-around;
+    }
 }

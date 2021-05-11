@@ -10,21 +10,30 @@ interface CareerPathDef {
 }
 
 export const CareerPath = (props: CareerPathDef) => {
+    const divRef = React.useRef<HTMLDivElement>(null);
+
+    React.useEffect(() => {
+        if (divRef.current) {
+            divRef.current.innerHTML = props.about;
+        }
+    }, [props.about]);
+
     return (
         <section className={style.career}>
             <div className={style.careerLeft}>
-                <h3 className={style.careerTitle}>Take your career further</h3>
-                <p className={style.careerP}>{props.about}</p>
+                {/* <h3 className={style.careerTitle}>Take your career further</h3> */}
+                <div className={style.careerP} ref={divRef}></div>
             </div>
 
             <div className={style.careerRight}>
                 {props.carousel.map((img) => (
-                    <img
-                        src={img}
-                        alt={`pictures from ${props.name}`}
-                        key={img}
-                        className={style.careerImg}
-                    />
+                    <li key={img} className={style.careerLi}>
+                        <img
+                            src={img}
+                            alt={`pictures from ${props.name}`}
+                            className={style.careerImg}
+                        />
+                    </li>
                 ))}
 
                 <Button

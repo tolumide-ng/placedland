@@ -29,6 +29,10 @@
     color: var(--color-black-70);
     line-height: 1.375rem;
     font-size: 0.75rem;
+    height: 11rem;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
 }
 
 .testPerson {

@@ -14,7 +14,7 @@ interface PlacedFeaturesDef {
 
 export const PlacedFeatures = (props: PlacedFeaturesDef) => {
     return (
-        <section>
+        <section className={style.plfeat}>
             <CareerPath
                 carousel={props.carousel}
                 name={props.name}
