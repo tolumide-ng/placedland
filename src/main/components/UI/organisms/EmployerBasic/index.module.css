@@ -17,11 +17,6 @@
     position: relative;
 }
 
-.empBg {
-    width: var(--emp-w);
-    height: var(--emp-h);
-}
-
 .empCaption {
     position: absolute;
     top: 0;
@@ -38,6 +33,8 @@
     height: 6rem;
     width: 6rem;
     margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
 }
 
 .empName {
@@ -46,4 +43,9 @@
 
 .empDesc {
     margin-bottom: 2.9375rem;
+}
+
+.empHeader {
+    width: var(--emp-w);
+    height: var(--emp-h);
 }

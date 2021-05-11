@@ -32,7 +32,3 @@
     background-color: transparent;
     cursor: pointer;
 }
-
-.testiButton:active {
-    transform: scale(0.98);
-}

@@ -10,8 +10,9 @@ export const RelatedBrands = () => {
         <section className={style.rbrands}>
             <h3 className={style.rbrandsTitle}>Related Brands</h3>
             <div className={style.rbrandsCont}>
-                {relatedBrandsOptions.map((brand) => (
+                {relatedBrandsOptions.map((brand, index) => (
                     <BrandsCard
+                        key={index}
                         brandImg={brand.img}
                         brandLogo={brand.logo}
                         brandMoto={brand.motto}
@@ -19,7 +20,10 @@ export const RelatedBrands = () => {
                     />
                 ))}
             </div>
-            <DashedLines />
+
+            <div className={style.rbrandsDash}>
+                <DashedLines />
+            </div>
 
             <UniqueApplication />
         </section>

@@ -40,16 +40,17 @@
 }
 
 .careerImg {
-    padding-right: 0.9375rem;
-    /* padding-bottom: 1rem; */
+    margin-right: 0.9375rem;
     height: 10rem;
     width: 10rem;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 1rem;
+    cursor: pointer;
 }
 
 .careerImg:nth-child(1),
-.careerImg:nth-last-child(3) {
-    padding-right: 0;
+.careerImg:nth-last-child(4) {
+    margin-right: 0;
 }
 
 .careerGallery {

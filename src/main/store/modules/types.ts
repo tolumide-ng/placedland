@@ -1,7 +1,7 @@
 import { Action } from "redux";
 import { ThunkAction } from "redux-thunk";
 import { RootStateDef } from ".";
-import { ForAxiosDefs } from "../../commonTypes";
+import { ForAxiosDefs, LandingStateDef } from "../../commonTypes";
 
 export interface RootState {
     dropDownReducer: {
@@ -22,3 +22,11 @@ export type AppThunk<ReturnType = void> = ThunkAction<
     unknown,
     Action<string>
 >;
+
+export interface RootState {
+    fetchLandingReducer: {
+        status: string;
+        error: string;
+        data: LandingStateDef;
+    };
+}

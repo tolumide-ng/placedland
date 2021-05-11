@@ -42,10 +42,6 @@
     cursor: pointer;
 }
 
-.brandButton:active {
-    transform: scale(0.98);
-}
-
 .brandName {
     font-size: 0.8125rem;
     margin-bottom: 0.5rem;

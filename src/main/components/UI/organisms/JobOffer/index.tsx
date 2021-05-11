@@ -60,11 +60,11 @@ export const JobOffer = () => {
                 </div>
                 <div className={style.jobBottom}>
                     <Button
-                        buttonClass={`${style.jobButton} ${style.jobApply}`}
+                        buttonClass={`${style.jobButton} ${style.jobApply} appButton`}
                         buttonText="Apply"
                     />
                     <Button
-                        buttonClass={`${style.jobButton} ${style.jobShortList}`}
+                        buttonClass={`${style.jobButton} ${style.jobShortList} appButton`}
                         buttonText="shortList"
                     />
                 </div>

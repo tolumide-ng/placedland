@@ -36,6 +36,7 @@
     --app-pl: 8.875rem;
     --app-pr: 8.9375rem;
     --app-opimg-h: 28rem;
+    --screen-max-width: calc(min(1500px, 100vw));
 }
 
 @media screen and (max-width: 1024px) {
