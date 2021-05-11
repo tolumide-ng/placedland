@@ -25,8 +25,8 @@ export type AppThunk<ReturnType = void> = ThunkAction<
 
 export interface RootState {
     landingReducer: {
-        status: string,
-        error: string,
-        data: {}
+        status: string;
+        error: string;
+        data: {};
     };
 }
