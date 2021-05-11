@@ -40,17 +40,13 @@
 }
 
 .careerImg {
-    margin-right: 0.9375rem;
+    margin-left: 0.9375rem;
     height: 10rem;
     width: 10rem;
     object-fit: cover;
     border-radius: 1rem;
     cursor: pointer;
-}
-
-.careerImg:nth-child(1),
-.careerImg:nth-last-child(4) {
-    margin-right: 0;
+    margin-bottom: 0.94375rem;
 }
 
 .careerGallery {
@@ -63,8 +59,8 @@
 
 .careerButton {
     background-color: transparent;
-    margin-right: 0.9375rem;
     border: none;
+    cursor: pointer;
 }
 
 .careerCaption {
