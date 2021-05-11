@@ -15,30 +15,32 @@ const headerRoutes = [
 
 export const Header = () => {
     return (
-        <header className={style.header}>
-            <div className={style.headerLogoCont}>
-                <LoadImg
-                    loadAlt="image showing the logo of Placed"
-                    loadImg={placedLogo}
-                    loadClass={style.headerLogo}
-                />
-            </div>
+        <header>
+            <div className={style.header}>
+                <div className={style.headerLogoCont}>
+                    <LoadImg
+                        loadAlt="image showing the logo of Placed"
+                        loadImg={placedLogo}
+                        loadClass={style.headerLogo}
+                    />
+                </div>
 
-            <div className="">
-                {headerRoutes.map((route) => (
-                    <Link
-                        to={route.route}
-                        key={route.name}
-                        className={style.headerRoute}
-                    >
-                        {route.name}
-                    </Link>
-                ))}
-                <Button
-                    buttonClass={`${style.headerButton} appButton`}
-                    buttonText="Book A demo"
-                    buttonType="button"
-                />
+                <div className="">
+                    {headerRoutes.map((route) => (
+                        <Link
+                            to={route.route}
+                            key={route.name}
+                            className={style.headerRoute}
+                        >
+                            {route.name}
+                        </Link>
+                    ))}
+                    <Button
+                        buttonClass={`${style.headerButton} appButton`}
+                        buttonText="Book A demo"
+                        buttonType="button"
+                    />
+                </div>
             </div>
         </header>
     );

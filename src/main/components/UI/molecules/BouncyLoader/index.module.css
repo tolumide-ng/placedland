@@ -1,0 +1,41 @@
+.lazy {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lazyC {
+    width: 1rem;
+    background-color: var(--color-grade-green);
+    height: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 100%;
+}
+
+.lazyC:nth-child(1) {
+    transform-origin: left;
+    animation: bouncy 1s ease 0s infinite;
+}
+
+.lazyC:nth-child(2) {
+    animation: bouncy 1s ease 0.33s infinite;
+    background-color: var(--color-grade-green);
+}
+
+.lazyC:nth-child(3) {
+    animation: bouncy 1s ease-in-out 0.66s infinite;
+    transform-origin: left;
+}
+
+@keyframes bouncy {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
