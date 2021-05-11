@@ -54,7 +54,3 @@
     font-weight: bold;
     cursor: pointer;
 }
-
-.applyButton:active {
-    transform: scale(0.98);
-}

@@ -35,7 +35,7 @@ export const Header = () => {
                     </Link>
                 ))}
                 <Button
-                    buttonClass={style.headerButton}
+                    buttonClass={`${style.headerButton} appButton`}
                     buttonText="Book A demo"
                     buttonType="button"
                 />

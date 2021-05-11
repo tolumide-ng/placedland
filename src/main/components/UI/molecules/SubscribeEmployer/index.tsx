@@ -22,7 +22,7 @@ export const SubscribeEmployer = () => {
                     className={`${style.subscribeInput} ${style.subscribeName}`}
                 />
                 <Button
-                    buttonClass={style.subscribeButton}
+                    buttonClass={`${style.subscribeButton} appButton`}
                     buttonText="follow"
                 />
             </div>

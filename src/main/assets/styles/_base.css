@@ -12,3 +12,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+.appButton:active {
+    transform: scale(0.98);
+}

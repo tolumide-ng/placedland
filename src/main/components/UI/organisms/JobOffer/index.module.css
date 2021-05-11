@@ -124,10 +124,6 @@
     font-weight: 600;
 }
 
-.jobButton:active {
-    transform: scale(0.98);
-}
-
 .jobApply {
     background-color: var(--color-candlelight);
     color: var(--color-black);

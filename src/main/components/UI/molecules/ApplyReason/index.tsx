@@ -15,7 +15,7 @@ export const ApplyReason = () => {
 
             <div className={style.applyAction}>
                 <Button
-                    buttonClass={style.applyButton}
+                    buttonClass={`${style.applyButton} appButton`}
                     buttonText="Start Applying"
                 />
             </div>

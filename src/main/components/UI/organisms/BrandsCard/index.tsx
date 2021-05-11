@@ -26,7 +26,7 @@ export const BrandsCard = (props: BrandsCardDef) => {
                         loadClass={style.brandLogo}
                     />
                     <Button
-                        buttonClass={style.brandButton}
+                        buttonClass={`${style.brandButton} appButton`}
                         buttonText="Follow"
                     />
                 </figcaption>

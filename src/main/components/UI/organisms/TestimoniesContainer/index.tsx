@@ -24,7 +24,7 @@ export const TestimoniesContainer = (props: TestimoniesContainerDef) => {
             </div>
             <div className={style.testiBottom}>
                 <Button
-                    buttonClass={style.testiButton}
+                    buttonClass={`${style.testiButton} appButton`}
                     buttonText="Read More"
                 />
             </div>
