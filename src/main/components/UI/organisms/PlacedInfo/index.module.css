@@ -1,6 +1,7 @@
 .placedIn {
+    --placedin-translate: 1rem;
     position: relative;
-    height: calc(var(--testi-h) + var(--rbrands-h) - 1rem);
+    height: calc(var(--testi-h) + var(--rbrands-h) - var(--placedin-translate));
 }
 
 .placedInTop {
@@ -10,7 +11,7 @@
 .placedInBottom {
     height: var(--rbrands-h);
     position: absolute;
-    top: calc(var(--testi-h) - 1rem);
+    top: calc(var(--testi-h) - var(--placedin-translate));
     left: 0;
     right: 0;
     width: 100%;

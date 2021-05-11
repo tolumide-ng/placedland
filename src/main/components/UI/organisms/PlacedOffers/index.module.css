@@ -1,7 +1,21 @@
 .placo {
-    /* transform: translateY(-2.5rem); */
+    --placo-translate: 2.5rem;
+    height: calc(var(--excl-h) + var(--emp-h) - var(--placo-translate));
+    position: relative;
 }
 
 .placoEmployers {
-    /* transform: translateY(2.5rem); */
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.placoOffers {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(var(--emp-h) - var(--placo-translate));
+    z-index: 1;
 }
