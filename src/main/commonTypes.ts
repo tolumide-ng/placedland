@@ -33,12 +33,7 @@ export interface LandingStateDef {
         carousel: Array<string>;
         id: number;
     };
-    main_quote: {
-        heading: string;
-        body: string;
-        footer: string;
-        footer_photo: string;
-    };
+    main_quote: MainQuoteDef;
     social_links: {
         facebook: string;
         instagram: string;
@@ -59,4 +54,11 @@ export interface QuoteInfoDef {
     author: string;
     position: string;
     text: string;
+}
+
+export interface MainQuoteDef {
+    heading: string;
+    body: string;
+    footer: string;
+    footer_photo: string;
 }

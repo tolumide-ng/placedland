@@ -3,7 +3,6 @@ import { TestimonyCard } from "@molecules/TestimonyCard";
 import * as React from "react";
 import { QuoteInfoDef } from "src/main/commonTypes";
 import style from "./index.module.css";
-import { testimoniesOptions } from "./index.options";
 
 interface TestimoniesContainerDef {
     quotes: Array<QuoteInfoDef>;

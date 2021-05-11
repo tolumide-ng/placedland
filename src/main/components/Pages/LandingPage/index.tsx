@@ -48,7 +48,7 @@ export const LandingPage = () => {
                     <>
                         {" "}
                         <PlacedOffers />
-                        <PlacedFeatures />
+                        <PlacedFeatures mainQuote={data.main_quote} />
                         <PlacedInfo quotes={data.quotes} />
                     </>
                 ) : (

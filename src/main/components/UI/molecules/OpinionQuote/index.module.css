@@ -12,6 +12,14 @@
     line-height: 1.6875rem;
     font-size: 1rem;
     color: var(--color-black-70);
+    overflow: hidden;
+}
+
+.opinonText {
+    height: 12rem;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
 }
 
 .opinionImg {

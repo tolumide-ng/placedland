@@ -3,12 +3,17 @@ import style from "./index.module.css";
 import { CareerPath } from "@organisms/CareerPath";
 import { Opinion } from "@organisms/Opinion";
 import { BenefitFeat } from "@organisms/BenefitFeat";
+import { MainQuoteDef } from "src/main/commonTypes";
 
-export const PlacedFeatures = () => {
+interface PlacedFeaturesDef {
+    mainQuote: MainQuoteDef;
+}
+
+export const PlacedFeatures = (props: PlacedFeaturesDef) => {
     return (
         <section>
             <CareerPath />
-            <Opinion />
+            <Opinion mainQuote={props.mainQuote} />
             <BenefitFeat />
         </section>
     );

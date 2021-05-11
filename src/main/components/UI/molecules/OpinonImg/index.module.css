@@ -7,6 +7,12 @@
 .opImg {
     height: var(--app-opimg-h);
     width: var(--app-opimg-h);
+    border-radius: 1rem;
+    background-blend-mode: linear-gradient(
+        360deg,
+        var(--color-black) 3.56%,
+        var(--color-black) 97.59%
+    );
 }
 
 .opCaption {
