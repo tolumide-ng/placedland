@@ -19,7 +19,10 @@ export const RelatedBrands = () => {
                     />
                 ))}
             </div>
-            <DashedLines />
+
+            <div className={style.rbrandsDash}>
+                <DashedLines />
+            </div>
 
             <UniqueApplication />
         </section>
