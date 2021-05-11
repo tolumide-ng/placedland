@@ -26,31 +26,37 @@ export interface LandingStateDef {
         followers: number;
         description: string;
         info: string;
-        photos: {
-            logo: string;
-            header: string;
-            carousel: Array<string>;
-            id: number;
-        };
-        main_quote: {
-            heading: string;
-            body: string;
-            footer: string;
-            footer_photo: string;
-        };
-        social_links: {
-            facebook: string;
-            instagram: string;
-            twitter: string;
-            linkedin: string;
-        };
-        cuisineGenerated: string;
-        cuisine: {
-            id: string;
-            name: string;
-        };
-        about: string;
-        quotes: Array<{ author: string; position: string; text: string }>;
-        jobs: [];
     };
+    photos: {
+        logo: string;
+        header: string;
+        carousel: Array<string>;
+        id: number;
+    };
+    main_quote: {
+        heading: string;
+        body: string;
+        footer: string;
+        footer_photo: string;
+    };
+    social_links: {
+        facebook: string;
+        instagram: string;
+        twitter: string;
+        linkedin: string;
+    };
+    cuisineGenerated: string;
+    cuisine: {
+        id: string;
+        name: string;
+    };
+    about: string;
+    quotes: Array<QuoteInfoDef>;
+    jobs: [];
+}
+
+export interface QuoteInfoDef {
+    author: string;
+    position: string;
+    text: string;
 }
