@@ -1,6 +1,5 @@
 .placo {
-    --placo-translate: 2.5rem;
-    height: calc(var(--excl-h) + var(--emp-h) - var(--placo-translate));
+    height: var(--placo-h);
     position: relative;
 }
 

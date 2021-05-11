@@ -21,7 +21,7 @@ export const CareerPath = (props: CareerPathDef) => {
     return (
         <section className={style.career}>
             <div className={style.careerLeft}>
-                <h3 className={style.careerTitle}>Take your career further</h3>
+                {/* <h3 className={style.careerTitle}>Take your career further</h3> */}
                 <div className={style.careerP} ref={divRef}></div>
             </div>
 

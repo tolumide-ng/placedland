@@ -47,10 +47,12 @@ export const LandingPage = () => {
             <article className={style.ldpgCont}>
                 {data ? (
                     <>
-                        <PlacedOffers
-                            headerImg={data.photos.header}
-                            logo={data.photos.logo}
-                        />
+                        <div className={style.ldpOne}>
+                            <PlacedOffers
+                                headerImg={data.photos.header}
+                                logo={data.photos.logo}
+                            />
+                        </div>
                         <div className={style.ldpTwo}>
                             <PlacedFeatures
                                 mainQuote={data.main_quote}

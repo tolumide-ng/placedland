@@ -43,6 +43,9 @@
     --rbrands-h: 65.5625rem;
     --testi-h: 36.5rem;
     --excl-h: 40rem;
+    --placo-translate: 2.5rem;
+    --placo-h: calc(var(--excl-h) + var(--emp-h) - var(--placo-translate));
+    --ldpgtwo-translate: -1.5rem;
 }
 
 @media screen and (max-width: 1024px) {

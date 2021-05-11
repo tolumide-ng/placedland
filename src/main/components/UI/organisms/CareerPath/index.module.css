@@ -1,7 +1,7 @@
 .career {
     padding-left: var(--app-pl);
     padding-right: var(--app-pr);
-    padding-top: 2.5rem;
+    /* padding-top: 2.5rem; */
     display: flex;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 3.0625rem;
@@ -11,10 +11,9 @@
 }
 
 .careerLeft {
-    /* width: 25.0625rem;
-    padding-right: 4.1875rem; */
     width: 100%;
     grid-column: 1;
+    padding-top: 3.5rem;
 }
 
 .careerTitle {
