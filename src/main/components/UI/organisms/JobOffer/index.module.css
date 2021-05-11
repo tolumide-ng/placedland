@@ -1,9 +1,4 @@
 .job {
-    --job-w: 19.75rem;
-    --job-h: 14.8125rem;
-    --job-top-h: 0.25rem;
-    --job-br: 0.5rem;
-
     border-radius: var(--job-br);
     position: relative;
     /* margin-left: 14rem; */
@@ -15,7 +10,6 @@
     border-top-right-radius: calc(var(--job-br));
     font-family: "Montserrat", sans-serif;
     color: var(--color-white);
-    margin-right: 1.1875rem;
 }
 
 .job:nth-last-child(1) {
@@ -28,13 +22,11 @@
     height: var(--job-top-h);
     background-color: var(--color-candlelight);
     top: 0;
-    /* width: calc(var(--job-w)- 1.9px); */
     border-top-left-radius: var(--job-br);
     border-top-right-radius: var(--job-br);
     width: calc(100% - 2px);
     left: 0.95px;
     right: -1px;
-    /* right: 5px; */
 }
 
 .jobTop {

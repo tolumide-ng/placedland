@@ -27,12 +27,13 @@ export const CareerPath = (props: CareerPathDef) => {
 
             <div className={style.careerRight}>
                 {props.carousel.map((img) => (
-                    <img
-                        src={img}
-                        alt={`pictures from ${props.name}`}
-                        key={img}
-                        className={style.careerImg}
-                    />
+                    <li key={img} className={style.careerLi}>
+                        <img
+                            src={img}
+                            alt={`pictures from ${props.name}`}
+                            className={style.careerImg}
+                        />
+                    </li>
                 ))}
 
                 <Button

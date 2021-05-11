@@ -1,20 +1,29 @@
 .placo {
+    --placo-pos: absolute;
+    --placo-offers-top: calc(var(--emp-h) - var(--placo-translate));
     height: var(--placo-h);
     position: relative;
 }
 
 .placoEmployers {
     z-index: 5;
-    position: absolute;
+    position: var(--placo-pos);
     top: 0;
     left: 0;
     right: 0;
 }
 
 .placoOffers {
-    position: absolute;
+    position: var(--placo-pos);
     left: 0;
     right: 0;
-    top: calc(var(--emp-h) - var(--placo-translate));
+    top: var(--placo-offers-top);
     z-index: 1;
+}
+
+@media screen and (max-width: 1262px) {
+    .placo {
+        --placo-pos: relative;
+        --placo-offers-top: 0;
+    }
 }

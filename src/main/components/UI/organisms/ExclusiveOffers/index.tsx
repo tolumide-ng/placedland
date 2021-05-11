@@ -10,11 +10,13 @@ export const ExclusiveOffers = () => {
                 <h2 className={style.exclTitleH}>Exclusive Job Offers</h2>
             </div>
 
-            <div className={style.exclJobs}>
+            <ul className={style.exclJobs}>
                 {new Array(3).fill("_").map((option, index) => (
-                    <JobOffer key={index} />
+                    <li key={index} className={style.exclLi}>
+                        <JobOffer />
+                    </li>
                 ))}
-            </div>
+            </ul>
 
             <div className={style.exclAction}>
                 <Button

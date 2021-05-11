@@ -30,11 +30,16 @@
     margin-top: 5.3125rem;
     display: flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+}
+
+.exclLi {
+    margin-bottom: 2.3125rem;
+    list-style: none;
+    margin-right: var(--job-mr);
 }
 
 .exclButton {
-    margin-top: 2.3125rem;
     color: var(--color-candlelight);
     font-weight: 400;
     text-decoration: underline;
@@ -50,4 +55,16 @@
     justify-content: center;
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 1262px) {
+    .exclButton {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .exclJobs {
+        justify-content: space-around;
+    }
 }
