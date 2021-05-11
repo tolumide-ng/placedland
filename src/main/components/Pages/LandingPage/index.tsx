@@ -47,11 +47,15 @@ export const LandingPage = () => {
                 {data ? (
                     <>
                         {" "}
-                        <PlacedOffers />
+                        <PlacedOffers
+                            headerImg={data.photos.header}
+                            logo={data.photos.logo}
+                        />
                         <PlacedFeatures
                             mainQuote={data.main_quote}
                             carousel={data.photos.carousel}
                             name={data.details.name}
+                            about={data.about}
                         />
                         <PlacedInfo quotes={data.quotes} />
                     </>

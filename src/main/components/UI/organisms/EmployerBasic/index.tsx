@@ -1,12 +1,12 @@
 import { LoadImg } from "@atoms/LoadImg";
 import * as React from "react";
 import style from "./index.module.css";
-import gourLogo from "@imgs/gourMent.svg";
-import gourmentBg from "@imgs/gourmentBackground.svg";
 import { SubscribeEmployer } from "@molecules/SubscribeEmployer";
+import gourmentBg from "@imgs/gourmentBackground.svg";
 
 interface EmployerBasicDef {
-    // employerLogo: string;
+    logo: string;
+    headerImg: string;
 }
 
 export const EmployerBasic = (props: EmployerBasicDef) => {
@@ -15,14 +15,16 @@ export const EmployerBasic = (props: EmployerBasicDef) => {
             <figure className={style.empFig}>
                 <LoadImg
                     loadAlt="image showing employer's logo"
+                    // loadImg={props.headerImg}
                     loadImg={gourmentBg}
                     loadHeight="440px"
+                    loadClass={style.empHeader}
                 />
 
                 <figcaption className={style.empCaption}>
                     <LoadImg
                         loadAlt="image showing employer's logo"
-                        loadImg={gourLogo}
+                        loadImg={props.logo}
                         loadHeight="96px"
                         loadClass={style.empCaptionLogo}
                     />

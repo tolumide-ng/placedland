@@ -9,12 +9,17 @@ interface PlacedFeaturesDef {
     mainQuote: MainQuoteDef;
     carousel: Array<string>;
     name: string;
+    about: string;
 }
 
 export const PlacedFeatures = (props: PlacedFeaturesDef) => {
     return (
         <section>
-            <CareerPath carousel={props.carousel} name={props.name} />
+            <CareerPath
+                carousel={props.carousel}
+                name={props.name}
+                about={props.about}
+            />
             <Opinion mainQuote={props.mainQuote} />
             <BenefitFeat />
         </section>
