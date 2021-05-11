@@ -7,6 +7,7 @@ import "./index.css";
 import { RootState } from "@store/modules/types";
 import { fetchLandingAction } from "@store/modules/landing/actions";
 import { LandingStateDef } from "src/main/commonTypes";
+import { LoadScreen } from "@organisms/LoadScreen";
 
 export const LandingPage = () => {
     const [data, setData] = React.useState<undefined | LandingStateDef>(
@@ -60,7 +61,7 @@ export const LandingPage = () => {
                         <PlacedInfo quotes={data.quotes} />
                     </>
                 ) : (
-                    <></>
+                    <LoadScreen />
                 )}
             </article>
         </article>

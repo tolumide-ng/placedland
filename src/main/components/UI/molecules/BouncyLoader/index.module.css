@@ -8,7 +8,7 @@
 
 .lazyC {
     width: 1rem;
-    background-color: var(--color-grade-green);
+    background-color: var(--app-default-color);
     height: 1rem;
     margin-left: 0.5rem;
     border-radius: 100%;
@@ -21,7 +21,7 @@
 
 .lazyC:nth-child(2) {
     animation: bouncy 1s ease 0.33s infinite;
-    background-color: var(--color-grade-green);
+    background-color: var(--app-default-color);
 }
 
 .lazyC:nth-child(3) {

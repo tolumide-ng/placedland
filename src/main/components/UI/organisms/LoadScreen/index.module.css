@@ -1,6 +1,6 @@
 .load {
     height: 50vh;
-    width: 100vw;
+    width: var(--screen-max-width);
     background-color: var(--color-white);
     display: flex;
     justify-content: center;
