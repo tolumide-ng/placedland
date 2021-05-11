@@ -37,6 +37,11 @@
     --app-pr: 8.9375rem;
     --app-opimg-h: 28rem;
     --screen-max-width: calc(min(1500px, 100vw));
+    --emp-h: 27.5rem;
+    --emp-w: 71.6875rem;
+    --emp-cp-pt: 3.625rem;
+    --rbrands-h: 65.5625rem;
+    --testi-h: 36.5rem;
 }
 
 @media screen and (max-width: 1024px) {

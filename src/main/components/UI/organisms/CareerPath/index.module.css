@@ -73,3 +73,15 @@
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 1262px) {
+    .career {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .careerRight {
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+}

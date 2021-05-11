@@ -12,7 +12,9 @@ interface PlacedInfoDef {
 export const PlacedInfo = (props: PlacedInfoDef) => {
     return (
         <section className={style.placedIn}>
-            <TestimoniesContainer quotes={props.quotes} />
+            <div className={style.placedInTop}>
+                <TestimoniesContainer quotes={props.quotes} />
+            </div>
             <div className={style.placedInBottom}>
                 <RelatedBrands />
             </div>

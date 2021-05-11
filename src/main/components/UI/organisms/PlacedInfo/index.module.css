@@ -1,0 +1,17 @@
+.placedIn {
+    position: relative;
+    height: calc(var(--testi-h) + var(--rbrands-h) - 1rem);
+}
+
+.placedInTop {
+    height: var(--testi-h);
+}
+
+.placedInBottom {
+    height: var(--rbrands-h);
+    position: absolute;
+    top: calc(var(--testi-h) - 1rem);
+    left: 0;
+    right: 0;
+    width: 100%;
+}

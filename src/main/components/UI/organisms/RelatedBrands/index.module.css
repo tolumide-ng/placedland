@@ -5,12 +5,12 @@
             var(--color-black) 97.11%
         ),
         var(--color-baltic-sea);
-    height: 65.5625rem;
+    height: var(--rbrands-h);
     width: 100%;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     position: relative;
-    transform: translateY(-1rem);
+    /* transform: translateY(-1rem); */
 }
 
 .rbrandsTitle {

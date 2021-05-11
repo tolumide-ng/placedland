@@ -2,7 +2,7 @@
     padding-left: var(--app-pl);
     padding-right: var(--app-pr);
     background-color: var(--color-candlelight2);
-    height: 36.5rem;
+    height: var(--testi-h);
 }
 
 .testiCont {
