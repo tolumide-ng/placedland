@@ -53,6 +53,9 @@
     --job-top-h: 0.25rem;
     --job-br: 0.5rem;
     --ben-w: 22.5rem;
+    --footer-pl: 9.75rem;
+    --footer-pr: 7.5rem;
+    --footer-h: 17.9375rem;
 }
 
 @media screen and (max-width: 1262px) {
@@ -65,6 +68,9 @@
         --testi-h: 100%;
         --ldpgtwo-translate: 0;
         --rbrands-h: 100%;
+        --footer-pl: 2rem;
+        --footer-pr: 2rem;
+        --footer-h: 100%;
     }
 }
 

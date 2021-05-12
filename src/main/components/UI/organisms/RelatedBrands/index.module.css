@@ -54,5 +54,7 @@
         --rbrands-li-ml: 0rem;
         --rbrands-cont-justify: space-around;
         --rbrands-li-mb: 1rem;
+        padding-left: var(--app-pl);
+        padding-right: var(--app-pr);
     }
 }

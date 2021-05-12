@@ -10,31 +10,30 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
     return (
         <footer className={style.footer}>
-            <div className={style.footerLeft}>
-                <LoadImg
-                    loadAlt="image showing placed's logo"
-                    loadClass={style.footerLogo}
-                    loadImg={placedFooter}
-                />
-
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+            <div className={style.footerCont}>
+                <div className={style.footerUs}>
                     <LoadImg
-                        loadAlt="Click on this image to download placed on Google Play store"
+                        loadAlt="image showing placed's logo"
                         loadClass={style.footerLogo}
-                        loadImg={playStore}
+                        loadImg={placedFooter}
                     />
-                </a>
 
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <LoadImg
-                        loadAlt="Click on this image to download placed on Apple's Play store"
-                        loadClass={style.footerLogo}
-                        loadImg={appStore}
-                    />
-                </a>
-            </div>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <LoadImg
+                            loadAlt="Click on this image to download placed on Google Play store"
+                            loadClass={style.footerLogo}
+                            loadImg={playStore}
+                        />
+                    </a>
 
-            <div className={style.footerRight}>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <LoadImg
+                            loadAlt="Click on this image to download placed on Apple's Play store"
+                            loadClass={style.footerLogo}
+                            loadImg={appStore}
+                        />
+                    </a>
+                </div>
                 {footerOptions.map((option) => (
                     <div className="" key={option.title}>
                         <h4 className={style.footerTitle}>{option.title}</h4>
