@@ -39,7 +39,7 @@
 }
 
 .empDesc {
-    margin-bottom: 2.9375rem;
+    margin-bottom: var(--emp-desc-mb);
 }
 
 .empHeader {

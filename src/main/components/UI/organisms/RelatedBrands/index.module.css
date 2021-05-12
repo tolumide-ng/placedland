@@ -1,4 +1,8 @@
 .rbrands {
+    --rbrands-br: 2rem;
+    --rbrands-li-ml: 1.125rem;
+    --rbrands-li-mb: 0rem;
+    --rbrands-cont-justify: center;
     background: linear-gradient(
             180deg,
             var(--color-baltic-sea4) 56%,
@@ -7,8 +11,8 @@
         var(--color-baltic-sea);
     height: var(--rbrands-h);
     width: 100%;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    border-top-left-radius: var(--rbrands-br);
+    border-top-right-radius: var(--rbrands-br);
     position: relative;
 }
 
@@ -24,11 +28,33 @@
 .rbrandsCont {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: var(--rbrands-cont-justify);
     margin-bottom: 3rem;
 }
 
 .rbrandsDash {
     padding-left: var(--app-pl);
     padding-right: var(--app-pr);
+}
+
+.rbrandsLi {
+    list-style: none;
+    width: 19.866875rem;
+    margin-left: var(--rbrands-li-ml);
+    margin-bottom: var(--rbrands-li-mb);
+}
+
+.rbrandsLi:nth-child(1) {
+    margin-left: 0;
+}
+
+@media screen and (max-width: 1262px) {
+    .rbrands {
+        --rbrands-br: 0rem;
+        --rbrands-li-ml: 0rem;
+        --rbrands-cont-justify: space-around;
+        --rbrands-li-mb: 1rem;
+        padding-left: var(--app-pl);
+        padding-right: var(--app-pr);
+    }
 }

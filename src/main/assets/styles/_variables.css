@@ -36,6 +36,7 @@
     --app-pl: 8.875rem;
     --app-pr: 8.9375rem;
     --app-opimg-h: 28rem;
+    --app-cont-mb: 0.5rem;
     --screen-max-width: calc(min(1500px, 100vw));
     --emp-h: 27.5rem;
     --emp-w: 71.6875rem;
@@ -52,6 +53,10 @@
     --job-top-h: 0.25rem;
     --job-br: 0.5rem;
     --ben-w: 22.5rem;
+    --footer-pl: 9.75rem;
+    --footer-pr: 7.5rem;
+    --footer-h: 17.9375rem;
+    --emp-desc-mb: 2.9375rem;
 }
 
 @media screen and (max-width: 1262px) {
@@ -60,6 +65,13 @@
         --app-pl: 2rem;
         --app-pr: 2rem;
         --placo-h: 100%;
+        --ben-w: 100%;
+        --testi-h: 100%;
+        --ldpgtwo-translate: 0;
+        --rbrands-h: 100%;
+        --footer-pl: 2rem;
+        --footer-pr: 2rem;
+        --footer-h: 100%;
     }
 }
 
@@ -68,7 +80,6 @@
         --app-pl: 1rem;
         --app-pr: 1rem;
         --job-mr: 0rem;
-        --ben-w: 100%;
     }
 }
 
@@ -80,6 +91,7 @@
 
 @media screen and (max-width: 405px) {
     :root {
+        --emp-cp-pt: 2rem;
     }
 }
 
