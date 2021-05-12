@@ -1,11 +1,5 @@
 .brand {
-    width: 19.866875rem;
     color: var(--color-white);
-    margin-left: 1.125rem;
-}
-
-.brand:nth-child(1) {
-    margin-left: 0;
 }
 
 .brandFig {

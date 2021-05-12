@@ -12,16 +12,17 @@ export const TestimoniesContainer = (props: TestimoniesContainerDef) => {
     return (
         <section className={style.testi}>
             <h3 className={style.testiTitle}>Others about us</h3>
-            <div className={style.testiCont}>
+            <ul className={style.testiCont}>
                 {props.quotes.map((option) => (
-                    <TestimonyCard
-                        key={option.author}
-                        name={option.author}
-                        role={option.position}
-                        text={option.text}
-                    />
+                    <li key={option.author} className={style.testiLi}>
+                        <TestimonyCard
+                            name={option.author}
+                            role={option.position}
+                            text={option.text}
+                        />
+                    </li>
                 ))}
-            </div>
+            </ul>
             <div className={style.testiBottom}>
                 <Button
                     buttonClass={`${style.testiButton} appButton`}

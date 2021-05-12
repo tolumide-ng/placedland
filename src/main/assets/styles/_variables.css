@@ -36,6 +36,7 @@
     --app-pl: 8.875rem;
     --app-pr: 8.9375rem;
     --app-opimg-h: 28rem;
+    --app-cont-mb: 0.5rem;
     --screen-max-width: calc(min(1500px, 100vw));
     --emp-h: 27.5rem;
     --emp-w: 71.6875rem;
@@ -60,6 +61,9 @@
         --app-pl: 2rem;
         --app-pr: 2rem;
         --placo-h: 100%;
+        --ben-w: 100%;
+        --testi-h: 100%;
+        --ldpgtwo-translate: 0;
     }
 }
 
@@ -68,7 +72,6 @@
         --app-pl: 1rem;
         --app-pr: 1rem;
         --job-mr: 0rem;
-        --ben-w: 100%;
     }
 }
 

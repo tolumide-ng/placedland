@@ -1,18 +1,23 @@
 .placedIn {
+    --placedIn-bot-pos: absolute;
+    --placedIn-bot-h: calc(var(--testi-h) - var(--placedin-translate));
     --placedin-translate: 1rem;
     position: relative;
     height: calc(var(--testi-h) + var(--rbrands-h) - var(--placedin-translate));
 }
 
-.placedInTop {
-    height: var(--testi-h);
-}
-
 .placedInBottom {
     height: var(--rbrands-h);
-    position: absolute;
-    top: calc(var(--testi-h) - var(--placedin-translate));
+    position: var(--placedIn-bot-pos);
+    top: var(--placedIn-bot-h);
     left: 0;
     right: 0;
     width: 100%;
+}
+
+@media screen and (max-width: 1262px) {
+    .placedIn {
+        --placedIn-bot-pos: relative;
+        --placedIn-bot-h: 0;
+    }
 }

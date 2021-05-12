@@ -1,9 +1,8 @@
 .test {
-    width: 23.25rem;
+    width: 100%;
     height: 19.875rem;
     background-color: var(--color-white);
     border-radius: 0.5rem;
-    margin-right: 1.125rem;
     padding-top: 1.375rem;
     padding-left: 1.70125rem;
     padding-right: 1.70125rem;
@@ -11,10 +10,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.test:nth-last-child(1) {
-    margin-right: 0;
 }
 
 .testImg {
