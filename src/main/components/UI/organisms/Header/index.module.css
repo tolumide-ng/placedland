@@ -45,3 +45,17 @@
     font-size: 0.875rem;
     line-height: 1.0625rem;
 }
+
+@media screen and (max-width: 1262px) {
+    .headerLinks {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .header {
+        --header-pr: 0;
+        --header-pl: 0;
+        justify-content: center;
+    }
+}

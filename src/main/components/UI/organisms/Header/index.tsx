@@ -25,7 +25,7 @@ export const Header = () => {
                     />
                 </div>
 
-                <div className="">
+                <div className={style.headerLinks}>
                     {headerRoutes.map((route) => (
                         <Link
                             to={route.route}
