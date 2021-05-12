@@ -1,8 +1,9 @@
 .subscribe {
     --sub-h: 2.5rem;
-    --sub-w: 42.9375rem;
-    --sub-email-w: 17.9375rem;
-    --sub-name-w: 16.6875rem;
+    --sub-w: calc(min(42.9375rem, calc(100vw - calc(var(--app-pl) * 2))));
+    --sub-email-w: 41.7758369723%;
+    --sub-name-w: 38.864628821%;
+    --sub-button-w: 18.7772925764%;
     --sub-br: 0.375rem;
     border: 1rem solid var(--color-black-50);
     border-radius: var(--sub-br);
@@ -31,6 +32,7 @@
     border-top-left-radius: var(--sub-br);
     border-bottom-left-radius: var(--sub-br);
     border-right: 1px solid var(--color-silver);
+    width: 41.7758369723%;
 }
 
 .subscribeName {
@@ -39,7 +41,7 @@
 }
 
 .subscribeButton {
-    width: 8.0625rem;
+    width: var(--sub-button-w);
     background-color: var(--color-candlelight);
     border-radius: 0.25rem;
     color: var(--color-black);
@@ -58,4 +60,27 @@
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     line-height: 1.171875rem;
+}
+
+@media screen and (max-width: 405px) {
+    .subscribeInput,
+    .subscribeEmail {
+        height: var(--sub-h);
+        margin-bottom: 0.5rem;
+        border-radius: var(--sub-br);
+        width: 100%;
+        border: none;
+    }
+
+    .subscribeCont {
+        flex-direction: column;
+        height: calc(var(--sub-h) * 3);
+        padding: 0.5rem;
+    }
+
+    .subscribe {
+        height: 100%;
+        --sub-button-w: 7rem;
+        border: none;
+    }
 }
