@@ -50,6 +50,7 @@ module.exports = {
         new webpack.DefinePlugin({
             "process.env": {
                 BASE_URL: JSON.stringify(process.env.BASE_URL),
+                ACTIVE_CAMPAIGN: JSON.stringify(process.env.ACTIVE_CAMPAIGN),
             },
         }),
     ],
