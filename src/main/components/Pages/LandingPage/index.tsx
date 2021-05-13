@@ -51,6 +51,8 @@ export const LandingPage = () => {
                             <PlacedOffers
                                 headerImg={data.photos.header}
                                 logo={data.photos.logo}
+                                name={data.details.name}
+                                info={data.details.info}
                             />
                         </div>
                         <div className={style.ldpTwo}>

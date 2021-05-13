@@ -45,4 +45,5 @@
 .empHeader {
     width: var(--emp-w);
     height: var(--emp-h);
+    border-radius: 1rem;
 }
